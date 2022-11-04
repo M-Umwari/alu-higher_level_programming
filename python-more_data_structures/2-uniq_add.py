@@ -4,9 +4,3 @@ def uniq_add(my_list=[]):
         return 0
     uniq_add = set(my_list)
     return int(sum(uniq_add))
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Secu
