@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Module Sqaure """
+""" Square Modules """
 
 
 class Square:
-    """ Square class defined by geometric shap
+    """ Square class defined by geometric shaped
         Attributes:
             size (int): Size of square
     """
