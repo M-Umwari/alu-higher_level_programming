@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #0-add_integer.py
-""""defines an integer addition function."""
+""""defines an integer addition function"""
 
 def add_integer(a, b=98):
     """return an integer addition of a and b."""
@@ -9,5 +9,3 @@ def add_integer(a, b=98):
         if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
         return int(a) + int(b)
-
-
