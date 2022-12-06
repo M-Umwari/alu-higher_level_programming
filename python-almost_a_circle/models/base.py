@@ -31,10 +31,10 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """Saving a list of objects to a file"""
-        file_nam e = cls.__name__ + ".json"
+        file_name = cls.__name__ + ".json"
         dic_list = []
         if list_objs:
-            for i in lis t_objs:
+            for i in list_objs:
                 dic_list.append(cls.to_dictionary(i))
 
         with open(file_name, mode="w") as myFile: 
@@ -76,5 +76,3 @@ class Base:
         for instance_dict in ex_content:
             context_list.append(cls.create(**instance_dict))
         return context_list
-    except:
-        return [] 
