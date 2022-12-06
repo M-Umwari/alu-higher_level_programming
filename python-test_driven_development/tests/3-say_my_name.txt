@@ -2,8 +2,8 @@ Import `say_my_name`
 
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
->>> say_my_name("Marlene", "Umwari")
-My name is Marlene Umwari
+>>> say_my_name("Umwari", "Marlene")
+My name is Umwari Marlene
 
 >>> say_my_name(2)
 Traceback (most recent call last):
