@@ -36,7 +36,7 @@ class Base:
             for i in list_objs:
                 dic_list.append(cls.to_dictionary(i))
               
-               with open(file_name, mode="w") as myFile: 
+        with open(file_name, mode="w") as myFile: 
             myFile.write(cls.to_json_string(dic_list))
 
     @staticmethod
