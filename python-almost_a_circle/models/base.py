@@ -35,7 +35,7 @@ class Base:
         if list_objs:
             for i in list_objs:
                 dic_list.append(cls.to_dictionary(i))
-              
+            
         with open(file_name, mode="w") as myFile: 
             myFile.write(cls.to_json_string(dic_list))
 
@@ -47,7 +47,7 @@ class Base:
 
         if len(json_string) == 0:
             return []
-
+        
         list_dicts = json.loads(json_string)
         return list_dicts
 
