@@ -8,9 +8,9 @@ from sys import argv
 if __name__ == "__main__":
     get_db= MySQLdb.connect(host="localhost", port=3306, user=argv[1],password=argv[2], db=argv[3])
 
-    ora=get_db.cursor()
-    ora.execute("SELECT * FROM states ORDER BY id ASC")
-    for row in ora.fetchall():
+    opra = get_db.cursor()
+    opra.execute("SELECT * FROM states ORDER BY id ASC")
+    for row in opra.fetchall():
         print(row)
-    ora.close()
+    opra.close()
     get_db.close()
