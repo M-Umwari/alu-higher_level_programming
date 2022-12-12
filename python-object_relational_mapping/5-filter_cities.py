@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" module list states
-from database"""
+""" module list states from database"""
+
+import MySQLdb
 
 if __name__ == "__main__":
-    import MySQLdb
+
     from sys import argv
     # port and host are default local and 3306
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
