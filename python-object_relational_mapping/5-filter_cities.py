@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module list states from database"""
+"""module list states from database"""
 
 import MySQLdb
 
