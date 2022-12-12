@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """module list states from database"""
 
 import MySQLdb
@@ -19,7 +20,7 @@ if __name__ == "__main__":
     # the argument check and add to list
     # with csv formating style
     cities = []
-    for a n result:
+    for a in result:
         if a[2] == argv[4]:
             cities.append(a[1])
     print(', '.join(cities))
