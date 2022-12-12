@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" module gets a state """
+""" themodule gets a state """
 
 
 if __name__ == "__main__":
-    from sys import arvgv
+    from sys import argv
     from model_state import State, Base
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
