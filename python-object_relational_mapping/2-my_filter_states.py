@@ -8,7 +8,7 @@ if __name__ == "__main__":
     # port and host are default local and 3306
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
     cur = db.cursor()
-    cur.execute("""SELECT * FROM states ORDER BY states.id ASC""")
+    cur.execute("""SELECT * FROM states ORDER BY states.id ASC""".format(argv[4]))
     result = cur.fetchall()
     # display elements with N
     # only by taking comparing their first letter in tuple
@@ -18,3 +18,4 @@ if __name__ == "__main__":
     # close cursor and db
     cur.close()
     db.close()
+
